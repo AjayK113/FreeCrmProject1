@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Free Crm Test1]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Regression test(failed)">
+    <classes>
+      <class name="com.crm.testcases.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyHomePageTitleTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.crm.testcases.HomePageTest -->
+      <class name="com.crm.testcases.ContactsPageTest">
+        <methods>
+          <include name="validateNewContact"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.crm.testcases.ContactsPageTest -->
+      <class name="com.crm.testcases.LoginPageTest">
+        <methods>
+          <include name="loginPageTitleTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.crm.testcases.LoginPageTest -->
+    </classes>
+  </test> <!-- Regression test(failed) -->
+</suite> <!-- Failed suite [Free Crm Test1] -->

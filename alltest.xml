@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="takesScreenshot.ITestlistenerclass" />
+	</listeners>
+<parameter name="author" value="ajay"></parameter>
+	<test name="Test Google">
+		<classes>
+			<class name="com.crm.testcases.LoginPageTest" >
+			<methods>
+				<include name="loginTest" />
+                 <include name="validateCrmLogoImageTest" />
+                  <include name="loginPageTitleTest" />
+			</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Test Orange HRM">
+<parameter name="author" value="jay"></parameter>
+		<classes>
+			<class name="com.crm.testcases.ContactsPageTest" >
+			<methods>
+				<include name="contactsLogoTest" />
+                  <include name="validateNewContact" />
+                     
+			</methods>
+			</class>
+		</classes>
+
+	</test>
+	<test name="Test CRMPRO"><!-- -->
+<parameter name="author" value="mallik"></parameter>
+		<classes>
+			<class name="com.crm.testcases.HomePageTest" >
+			<methods>
+				<include name="verifyHomePageTitleTest" />
+                    <include name="verifyUsernameTest" />
+                        <include name="verifyContactlinksTest" />
+			</methods>
+			</class>
+		</classes>
+	</test>
+</suite> 
